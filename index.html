@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>SICO / TJRR</title>
+  <link rel="icon" href="images/Logo TJRR.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/resetpassword.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+</head>
+
+<body style="background-color: #f0f0f0;">
+  <nav id="navBarraNavegacao" class="navbar navbar-expand-md BarraNavegacao CorBarraSistema p-0">
+
+    <img src="images/LogoTJ.png" alt="Logo" width="75" height="57" class="d-inline-block align-text-top">
+
+    <div id="divBarraSistema" class="flex-column w-100 h-100 BarraSistema">
+      <div id="divBarraSistemaLinha"></div>
+      <h6 class="pl-3 mb-10 mx-2 text-white d-none d-md-block mt-3">TRIBUNAL DE JUSTIÇA DO ESTADO DE RORAIMA</h6>
+
+      <div id="divBarraSistemaMovel" class="flex-row pb-0 pl-3 d-md-none media BarraSistemaMovel">
+        <div class="align-self-center mt-1">
+    </div>
+  </nav>
+
+  <div class="reset-password-container">
+    <div class="Img"> 
+      <img src="images/Logo TJRR.png">
+    </div>
+    <form class="reset-password-form" id="reset-password-form">
+      <h2 class="reset-password-title">Redefinir senha - Usuário</h2>
+      <div class="reset-password-input-box">
+        <label class="reset-password-label" for="matricula">Matricula:</label>
+        <input class="reset-password-input" type="text" id="matricula" name="matricula" required="required" placeholder="Informe sua matrícula...">
+      </div>
+      <button class="reset-password-button" type="submit">Redefinir Senha</button>
+    </form>
+  </div>
+
+  <div id="confirmationMessage" style="display: none;"></div>
+
+  <div id="mensagens">
+    <div id="mensagemErro" class="alert alert-danger" role="alert" style="display: none;"></div>
+    <div id="mensagemSucesso" class="alert alert-success" role="alert" style="display: none;"></div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
